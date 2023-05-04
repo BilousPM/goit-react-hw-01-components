@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import TransactionTableRow from "./TransactionTabeRow"
 
 export default function TransactionHistory ({items}) {
@@ -23,3 +24,9 @@ export default function TransactionHistory ({items}) {
   </table>
   
 };
+
+TransactionHistory.propTypes = {
+  items: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string.isRequired,
+  }))
+}

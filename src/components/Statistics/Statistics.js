@@ -1,4 +1,4 @@
-// import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import StatisticsTitle from './StatisticsTitle';
 import StatisticsElement from './StatisticsElement';
 
@@ -7,8 +7,21 @@ return <section class="statistics">
 {title && <StatisticsTitle title={title} />}
 <ul class="stat-list">
 {stats.map(item => {
-  return <StatisticsElement label={item.label} percentage={item.percentage}/>
+  return <StatisticsElement 
+  key={item.id} l
+  label={item.label} 
+  percentage={item.percentage}
+  />
 })}
 </ul>
 </section>
+};
+
+Statistics.propTyps = {
+  title: PropTypes.string.isRequired,
+  stats: PropTypes.arrayOf(PropTypes.exact({
+    id: PropTypes.string.isRequired,
+  })
+  )
+
 }

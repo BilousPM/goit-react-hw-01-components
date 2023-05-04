@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 export default function TransactionTableRow ({type, amount, currency}) {
   return <tr>
@@ -8,8 +8,8 @@ export default function TransactionTableRow ({type, amount, currency}) {
     </tr>
 }
 
-// TransactionTableRow.propTypes = {
-//   type: PropTypes.string,
-//   amount: PropTypes.number,
-//   currency: PropTypes.number,
-// }
+TransactionTableRow.propTypes = {
+  type: PropTypes.string.isRequired,
+  amount: PropTypes.string.isRequired,
+  currency: PropTypes.string.isRequired,
+}
