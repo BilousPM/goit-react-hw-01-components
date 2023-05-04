@@ -1,4 +1,4 @@
-import propTypes from 'prop-types';
+// import propTypes from 'prop-types';
 import StatisticsTitle from './StatisticsTitle';
 import StatisticsElement from './StatisticsElement';
 
