@@ -1,0 +1,22 @@
+.transaction__history {
+  border-collapse: collapse;
+  width: 50%;
+  font-size: 16px;
+}
+
+.transaction__history th,
+.transaction__history td {
+  padding: 15px;
+  text-align: center;
+  color: grey;
+  border-right: 1px solid #ccc;
+}
+
+.transaction__history th {
+  background-color: rgba(72, 166, 77, 0.796);
+  color: #ffff;
+}
+
+.transaction__history tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
